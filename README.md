@@ -10,20 +10,14 @@ Code is based on the [Huggingface](https://huggingface.co/docs/transformers/mode
 - Python version 3.9
 
 ### Data:
-Data can be downloaded from [this](https://smayerss-intern-data.s3.us-west-2.amazonaws.com/formatted-data-withscores-normalized/) S3 bucket. Data used for training were the [DREAM](https://github.com/nlpdata/dream) dataset and the [NarrativeQA](https://github.com/deepmind/narrativeqa) dataset. This data is already preprocessed.
-
-Original data can be found [here](https://smayerss-intern-data.s3.us-west-2.amazonaws.com/og-data/).
-Formatted data can be found [here](https://smayerss-intern-data.s3.us-west-2.amazonaws.com/formatted-data/).
-Formatted data with coverage scores can be found [here](https://smayerss-intern-data.s3.us-west-2.amazonaws.com/formatted-data-withscores/).
-Formatted data with normalized coverage scores can be found [here](https://smayerss-intern-data.s3.us-west-2.amazonaws.com/formatted-data-withscores-normalized/).
-
-S3 Bucket: arn:aws:s3:::smayerss-intern-data
-Admin account: aws-contact-lens-sci-intern@amazon.com
+Dataset for training are [DREAM](https://github.com/nlpdata/dream) dataset and the [NarrativeQA](https://github.com/deepmind/narrativeqa) dataset. This data is already preprocessed.
 
 To reformat the original dataset yourself, use preprocess/format_dataset.py
+
 To generate coverage scores for a formatted dataset, use get_coverage_scores.py
+
 To normalize the coverage scores for a formatted dataset with coverage scores, use normalizecoverage.py
-These instructions are not necessary if you download the preprocessed datasets from the above s3 bucket.
+
 
 ### Training QAGen:
 The idea is to train the model to generate QA pairs given a dataset of dialogues or other texts. 
@@ -81,11 +75,6 @@ To measure the coverage of the synthetic dataset's generated QA pairs using entr
 python coverage_eval.py -data_path PATH_TO_SYNTHETIC_DATA -ctype ent -synthetic True
 ```
 
-### Trained Models
-Trained models can be downloaded from [here](https://smayerss-intern-data.s3.us-west-2.amazonaws.com/trained_models/) : s3://smayerss-intern-data/trained_models/
-
 ### Human Annotation
 The HTML file for the UI for human annotation for comparing two synthetic datasets can be found at human_eval/human_eval_UI.html
 A script for formatting a dataset from two synthetic datasets for human evaluation can be found at human_eval/human_eval_examples.ipynb
-
-Note: The data files with annotations are present at `s3://siffis-seneca-data/smmayers-annotations-data/` in aws-seneca-dev+alpha-pdx-td-experiments@amazon.com  account. 
