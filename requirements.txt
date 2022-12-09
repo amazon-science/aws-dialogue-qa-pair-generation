@@ -7,7 +7,7 @@ attrs==21.4.0
 autopage==0.5.1
 bert-score==0.3.11
 cachetools==5.2.0
-certifi==2022.6.15
+certifi==2022.12.7
 charset-normalizer==2.0.12
 click==8.1.3
 cliff==4.0.0
