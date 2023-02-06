@@ -39,7 +39,7 @@ multidict==6.0.2
 multiprocess==0.70.13
 nltk==3.7
 numpy==1.22.4
-oauthlib==3.2.0
+oauthlib==3.2.2
 optuna==2.10.1
 packaging==21.3
 pandas==1.4.3
