@@ -47,7 +47,7 @@ patsy==0.5.2
 pbr==5.10.0
 Pillow==9.3.0
 prettytable==3.3.0
-protobuf==3.19.4
+protobuf==3.19.5
 pyarrow==8.0.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
