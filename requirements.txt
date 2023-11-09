@@ -48,7 +48,7 @@ pbr==5.10.0
 Pillow==10.0.1
 prettytable==3.3.0
 protobuf==3.19.5
-pyarrow==8.0.0
+pyarrow==14.0.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pyparsing==3.0.9
