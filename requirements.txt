@@ -81,7 +81,7 @@ torchvision==0.13.0
 tqdm==4.66.3
 transformers==4.36.0
 typing-extensions==4.2.0
-urllib3==1.26.18
+urllib3==1.26.19
 wcwidth==0.2.5
 Werkzeug==3.0.3
 xxhash==3.0.0
