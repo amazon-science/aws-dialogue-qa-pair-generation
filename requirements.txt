@@ -37,7 +37,7 @@ MarkupSafe==2.1.1
 matplotlib==3.5.2
 multidict==6.0.2
 multiprocess==0.70.13
-nltk==3.7
+nltk==3.9
 numpy==1.22.4
 oauthlib==3.2.2
 optuna==2.10.1
