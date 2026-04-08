@@ -79,7 +79,7 @@ tokenizers==0.12.1
 torch==2.2.0
 torchvision==0.13.0
 tqdm==4.64.0
-transformers==4.38.0
+transformers==5.0.0rc3
 typing-extensions==4.2.0
 urllib3==1.26.19
 wcwidth==0.2.5
